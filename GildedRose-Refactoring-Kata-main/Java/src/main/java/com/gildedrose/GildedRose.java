@@ -8,7 +8,7 @@ class GildedRose {
     }
 
     public void updateQuality() {
-        for (Item item : items) {
+        for (Item item : items) {   //updated for loop mit ai
             if (!item.name.equals("Aged Brie")
                     && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (item.quality > 0) {
@@ -49,7 +49,7 @@ class GildedRose {
                             }
                         }
                     } else {
-                        item.quality = 0;
+                        item.quality = 0; // ohne ai
                     }
                 } else {
                     if (item.quality < 50) {
@@ -59,4 +59,4 @@ class GildedRose {
             }
         }
     }
-}
+
